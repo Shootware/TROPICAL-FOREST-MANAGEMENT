@@ -1,0 +1,143 @@
+
+
+
+
+
+/* ===== COMPETENCES PAGE ===== */
+.competences-main {
+    padding-top: 80px;
+}
+
+.competences-hero {
+    position: relative;
+    height: 300px;
+    background: url('../images/images\ \(2\).jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.competences-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.competences-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.competences-hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.domaines-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.domaine-card {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.domaine-card:hover {
+    transform: translateY(-5px);
+}
+
+.domaine-icon {
+    flex: 0 0 120px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.domaine-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.domaine-content {
+    flex: 1;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.domaine-content h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.domaine-content p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.cta-section {
+    background: #f9f9f9;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .domaine-card {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .domaine-icon {
+        flex: 0 0 auto;
+        padding: 1.5rem;
+    }
+    
+    .domaine-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .competences-hero {
+        height: 250px;
+    }
+    
+    .competences-hero h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,154 @@
+/* ===== ANIMATIONS DE BASE ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFromLeft {
+    from { 
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from { 
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== ANIMATIONS DE BASE ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFromLeft {
+    from { 
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from { 
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== ANIMATIONS SCROLL ===== */
+.scroll-animate {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+/* Configuration des éléments */
+.parallax-section {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.values-section {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.news-section {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.value-card {
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.section-header {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.news-slide {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Animation alternée pour les cartes */
+.value-card:nth-child(odd) {
+    transform: translateX(-100px);
+}
+.value-card:nth-child(even) {
+    transform: translateX(100px);
+}
+
+/* Classes d'animation */
+.animate-in {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+/* Délais */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+.value-card:nth-child(1) { transition-delay: 0.1s; }
+.value-card:nth-child(2) { transition-delay: 0.3s; }
+.value-card:nth-child(3) { transition-delay: 0.5s; }
+
+/* ===== BARRES DE DÉFILEMENT ===== */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2e7d32, #81c784);
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+    animation: scrollbarPulse 3s infinite;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+}
+
+@keyframes scrollbarPulse {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4);
+    }
+    50% {
+        opacity: 0.8;
+        box-shadow: 0 0 0 5px rgba(46, 125, 50, 0);
+    }
+}
